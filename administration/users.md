@@ -9,7 +9,7 @@ The following video tutorial provides an overview:
 
 [https://www.youtube.com/embed/ba28BHX8cwU](https://www.youtube.com/embed/ba28BHX8cwU)
 
-## <a name="permissions"></a>Assign user permissions
+## Assign user permissions
 
 Launch user permissions are managed in the Admin Console like other Adobe Experience Cloud products.
 
@@ -126,7 +126,7 @@ The steps below guide you through the process of assigning permissions. Steps 1-
     Resolution: Your user account does not belong to a product configuration that has the Manage Properties right. Double-check steps 9 and on, above.
 
 
-## <a name="rights"></a>Rights details
+## Rights details
 
 Although groups are created for the entire Experience Cloud, you must set up some Launch-specific options.
 

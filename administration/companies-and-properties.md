@@ -16,7 +16,7 @@ This section contains the following information:
 
 For a video tutorial, see [Creating your first property](videos.md).
 
-## <a name="companies"></a>Companies
+## Companies
 
 In Launch, there is a 1:1 relationship between your companies and your Experience Cloud organizations.
 
@@ -24,7 +24,7 @@ First, you can have one or several Launch company accounts. Companies contain pr
 
 Some customers have one company that contains all of their properties. Some have a company that contains many properties, one for each domain. Some have a company that contains several properties, one for each type of site they manage.
 
-## <a name="separating"></a>Separating the Launch environment for multiple entities
+## Separating the Launch environment for multiple entities
 
 There are a few ways to handle multiple geo markets, business units, domains, and subdomains in Launch.
 
@@ -48,7 +48,7 @@ With one property that contains multiple domains and subdomains, you will eventu
 
 Multiple Launch companies are not recommended. Adobe strongly suggests multiple properties in a single company.
 
-## <a name="best-practices"></a>Best practices for planning properties
+## Best practices for planning properties
 
 Considering the following when planning properties:
 
@@ -91,13 +91,13 @@ Each implementation can be very different in Launch, with a wide variety of data
 
 If the scenarios you are tracking, the data you are collecting, the extensions you are deploying, and the variables you are setting are similar across all or some of your domains and subdomains, it is easier to have those domains and subdomains grouped into the same property in Launch. If those are unique for each domain and subdomain, it is easier to have those domains and subdomains in their own property. If you choose to group domains and subdomains in a single property now, you can always change your mind and later create several web properties.
 
-## <a name="deactivating"></a>Deactivating a property
+## Deactivating a property
 
 The ability to deactivate a property is planned for a future release.
 
 
 
-## <a name="properties"></a>Properties page
+## Properties page
 
 A property is a collection of rules, data elements, configured extensions, environments, and libraries. There is only one publish embed code per property.
 
@@ -114,7 +114,7 @@ The Properties list shows the following information:
 
 Click a property to see an overview of that property. The overview shows any activity performed on the property. It also lists the metrics and extensions for the property.
 
-## <a name="property-create"></a>Create a property
+## Create a property
 
 Create a property in Launch.
 
@@ -145,7 +145,7 @@ Before beginning, review the [Best practices for planning properties](properties
     The extension is automatically installed into the new property.
 
 
-## <a name="property-delete"></a>Delete a property
+## Delete a property
 
 Delete a property from Launch.
 

@@ -37,7 +37,7 @@ You can use data elements in custom scripts by using the `_satellite` object syn
 
 `_satellite.getVar('data element name');`
 
-## <a name="data-element-create"></a>Create a data element
+## Create a data element
 
 Data elements are the building blocks for rules. Data elements let you create a data dictionary (or data map) of commonly used items on a page, regardless of where they originate (query strings, URLs, or cookie values) for any object that is contained on your site.
 
@@ -64,7 +64,7 @@ Data elements are the building blocks for rules. Data elements let you create a 
 
 When creating or editing elements, you can save and build to your [active library](library.md). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
 
-## <a name="data-element-types"></a>Types of data elements
+## Types of data elements
 
 Data Element types are determined by the extension. There is no limit to the types that can be created.
 

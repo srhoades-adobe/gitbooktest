@@ -242,7 +242,7 @@ The Analytics extension provides the following actions:
 *   [Send Beacon](#send-beacon)
 *   [Clear Variables](#clear-variables)
 
-### <a name="set-variables"></a>Set Variables
+### Set Variables
 
 Important: Using a "set variables" action won't send the beacon. You must use the "send beacon" action.
 
@@ -334,7 +334,7 @@ Use the editor to specify your custom page code.
 2.  Type the custom code.
 3.  Click Save.
 
-### <a name="send-beacon"></a>Send Beacon
+### Send Beacon
 
 #### Increment a pageview - s.t()
 
@@ -361,6 +361,6 @@ Select if you do not want to increment a pageview.
     *   Exit Link: Specify the destination URL.
 3.  Click Keep Changes.
 
-### <a name="clear-variables"></a>Clear Variables
+### Clear Variables
 
 There are no configuration options if the Clear Variables action type is selected.

@@ -25,7 +25,7 @@ If you use embed code linking, the process is mostly the same as without it, but
 6.  Publish.
 7.  **Disable your DTM property to prevent accidentally publishing the DTM file over the top of the Launch file.**
 
-## <a name="embed-code-link"></a>Link the embed code
+## Link the embed code
 
 Before you link your embed code:
 

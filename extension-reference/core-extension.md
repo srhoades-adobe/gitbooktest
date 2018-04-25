@@ -22,7 +22,7 @@ Event types are divided into the following categories:
 
 For information about options that can be set for several different event types, see [Options](#options).
 
-### <a name="browser"></a>Browser
+### Browser
 
 #### Tab Blur
 
@@ -44,7 +44,7 @@ Trigger the action when a tab gains the focus.
 
 None
 
-### <a name="form"></a>Form
+### Form
 
 #### Blur
 
@@ -76,7 +76,7 @@ Trigger the action when a form is submitted.
 
 See [Options](#options), below.
 
-### <a name="keyboard"></a>Keyboard
+### Keyboard
 
 #### Key Press
 
@@ -88,7 +88,7 @@ Trigger the event if a key is pressed.
 
 See [Options](#options), below.
 
-### <a name="media"></a>Media
+### Media
 
 #### Media Ended
 
@@ -162,7 +162,7 @@ Trigger the event if the volume is raised or lowered.
 
 See [Options](#options), below.
 
-### <a name="mobile"></a>Mobile
+### Mobile
 
 #### Orientation Change
 
@@ -186,7 +186,7 @@ Trigger the event if the user zooms in or out.
 
 None
 
-### <a name="mouse"></a>Mouse
+### Mouse
 
 #### Click
 
@@ -214,7 +214,7 @@ See [Options](#options), below.
 
 In addition, configure whether the rule is triggered immediately or after a specified number of milliseconds.
 
-### <a name="other"></a>Other
+### Other
 
 #### Custom Event
 
@@ -292,7 +292,7 @@ Trigger the event if the user remains on the page for a specified number of seco
 
 Specify the number of seconds that must pass before the event is triggered.
 
-### <a name="page-load"></a>Page load
+### Page load
 
 #### DOM Ready
 
@@ -324,7 +324,7 @@ Trigger the event if the user reaches the bottom of the page
 
 None
 
-### <a name="options"></a>Options
+### Options
 
 Each of the form event types uses the following settings:
 
@@ -373,7 +373,7 @@ Event condition types are divided into the following categories:
 *   [Technology](#technology-cond)
 *   [URL](#url-cond)
 
-### <a name="data-cond"></a>Data
+### Data
 
 #### Cookie
 
@@ -434,7 +434,7 @@ Specify the JavaScript variable name and value that must exist for an event to t
 2.  Specify the variable value that must exist as a condition for the event.
 3.  (Optional) Enable Regex if this is a regular expression.
 
-### <a name="engagement-cond"></a>Engagement
+### Engagement
 
 #### Cart Amount
 
@@ -573,7 +573,7 @@ Specify the source of the visitor's traffic that must be true for the action to 
 1.  Specify the traffic source.
 2.  (Optional) Enable Regex if this is a regular expression.
 
-### <a name="technology-cond"></a>Technology
+### Technology
 
 #### Browser
 
@@ -661,7 +661,7 @@ Select the window size visitors must use on their devices for the action to be t
 3.  Select whether the window size height of the visitor's device must be greater than, equal to, or less than the specified value.
 4.  Specify the number of pixels required for the window size height.
 
-### <a name="url-cond"></a>URL
+### URL
 
 #### Domain
 
@@ -751,7 +751,7 @@ Event condition types are divided into the following categories:
 *   [Technology](#technology-ext)
 *   [URL](#url-ext)
 
-### <a name="data-ext"></a>Data
+### Data
 
 #### Cookie
 
@@ -812,7 +812,7 @@ Specify the JavaScript variable name and value that must not exist for an event 
 2.  Specify the variable value that must not exist as a condition for the event.
 3.  (Optional) Enable Regex if this is a regular expression.
 
-### <a name="engagement-ext"></a>Engagement
+### Engagement
 
 #### Cart Amount
 
@@ -947,7 +947,7 @@ Specify the source of the visitor's traffic that must be true to prevent the act
 1.  Specify the traffic source.
 2.  (Optional) Enable Regex if this is a regular expression.
 
-### <a name="technology-ext"></a>Technology
+### Technology
 
 #### Browser
 
@@ -1035,7 +1035,7 @@ Select the window size visitors must not use on their devices for the action to 
 3.  Select whether the window size height of the visitor's device must be greater than, equal to, or less than the specified value.
 4.  Specify the number of pixels required for the window size height.
 
-### <a name="url-ext"></a>URL
+### URL
 
 #### Domain
 

@@ -18,7 +18,7 @@ Libraries are approved or rejected as a whole. You cannot approve or reject indi
 
 A library moves between several environments as it makes its way through the publishing workflow.
 
-## <a name="library-create"></a>Create a library
+## Create a library
 
 1.  Open the Publishing tab.
     The Publishing page lists the Dev libraries and provides the means to submit them for approval, move them to staging, or publish them to production.
