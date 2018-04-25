@@ -26,7 +26,7 @@
   * [Core Extension](extension-reference/core-extension.md)
   * Experience Cloud ID Service Extension
   * [Adobe Analytics Extension](extension-reference/adobe-analytics-extension.md)
-  * [Adobe Analytics for Video Extension](extension-reference/untitled-1.md)
+  * [Adobe Analytics for Video Extension](extension-reference/adobe-analytics-for-video-extension.md)
   * [Adobe Target Extension](extension-reference/adobe-target-extension.md)
   * [Adobe ContextHub Extension](extension-reference/untitled-2.md)
   * [Adobe Audience Manager Extension](extension-reference/adobe-audience-manager-extension.md)
