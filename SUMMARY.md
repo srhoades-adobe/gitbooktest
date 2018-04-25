@@ -17,17 +17,17 @@
   * [Launch Object Reference](client-side-information/launch-object-reference.md)
   * [Asynchronous Deployment](client-side-information/untitled.md)
 * [Administration](administration/README.md)
-  * Users
-  * Companies and Properties
-  * Adapters
-  * Environments
-  * Link DTM Embed Code
-* Extension Reference
-  * Core Extension
-  * Experience Cloud ID Service Extension
-  * Adobe Analytics Extension
-  * Adobe Analytics for Video Extension
-  * Adobe Target Extension
-  * Adobe ContextHub Extension
-  * Adobe Audience Manager Extension
+  * [Users](administration/users.md)
+  * [Companies and Properties](administration/untitled.md)
+  * [Adapters](administration/adapters.md)
+  * [Environments](administration/untitled-1.md)
+  * [Link DTM Embed Code](administration/link-dtm-embed-code.md)
+* [Extension Reference](extension-reference/README.md)
+  * [Core Extension](extension-reference/core-extension.md)
+  * [Experience Cloud ID Service Extension](extension-reference/untitled.md)
+  * [Adobe Analytics Extension](extension-reference/adobe-analytics-extension.md)
+  * [Adobe Analytics for Video Extension](extension-reference/untitled-1.md)
+  * [Adobe Target Extension](extension-reference/adobe-target-extension.md)
+  * [Adobe ContextHub Extension](extension-reference/untitled-2.md)
+  * [Adobe Audience Manager Extension](extension-reference/adobe-audience-manager-extension.md)
 
