@@ -28,6 +28,6 @@
   * [Adobe Analytics Extension](extension-reference/adobe-analytics-extension.md)
   * [Adobe Analytics for Video Extension](extension-reference/adobe-analytics-for-video-extension.md)
   * [Adobe Target Extension](extension-reference/adobe-target-extension.md)
-  * [Adobe ContextHub Extension](extension-reference/untitled-2.md)
+  * [Adobe ContextHub Extension](extension-reference/adobe-contexthub-extension.md)
   * [Adobe Audience Manager Extension](extension-reference/adobe-audience-manager-extension.md)
 
