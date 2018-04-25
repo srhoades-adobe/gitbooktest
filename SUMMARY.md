@@ -6,7 +6,7 @@
   * [Videos](getting-started/videos.md)
 * [Managing Resources](managing-resources/README.md)
   * [Extensions](managing-resources/extensions.md)
-  * [Data Elements](managing-resources/untitled.md)
+  * [Data Elements](managing-resources/data-elements.md)
   * [Rules](managing-resources/rules.md)
   * [Delete Resources](managing-resources/untitled-1.md)
 * [Publishing](publishing/README.md)
