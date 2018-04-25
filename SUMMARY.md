@@ -8,7 +8,7 @@
   * [Extensions](managing-resources/extensions.md)
   * [Data Elements](managing-resources/data-elements.md)
   * [Rules](managing-resources/rules.md)
-  * [Delete Resources](managing-resources/untitled-1.md)
+  * [Delete Resources](managing-resources/delete-resources.md)
 * [Publishing](publishing/README.md)
   * [Libraries](publishing/libraries.md)
   * [Builds](publishing/untitled.md)
