@@ -11,7 +11,7 @@
   * [Delete Resources](managing-resources/delete-resources.md)
 * [Publishing](publishing/README.md)
   * [Libraries](publishing/libraries.md)
-  * [Builds](publishing/untitled.md)
+  * [Builds](publishing/builds.md)
   * [Approval Workflow](publishing/approval-workflow.md)
 * [Client-side Information](client-side-information/README.md)
   * [Launch Object Reference](client-side-information/launch-object-reference.md)
