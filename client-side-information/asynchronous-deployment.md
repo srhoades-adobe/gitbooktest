@@ -8,7 +8,7 @@ Performance and non-blocking deployment of the JavaScript libraries required by 
 
 Often, libraries are loaded synchronously in the `<head>` tag of a page. For example:
 
-```html
+```markup
 <script src="example.js"></script>
 ```
 
@@ -20,7 +20,7 @@ If the parser comes across the `<script>` tag before rendering visible content, 
 
 To load the JavaScript file asynchronously, add an async attribute to the `<script>` tag:
 
-```html
+```markup
 <script src="example.js" async></script>
 ```
 
@@ -44,26 +44,27 @@ Another consideration is that Launch has always provided a Page Bottom event typ
 
 ## Loading the Launch embed code asynchronously
 
-Launch provides a toggle to turn on asynchronous loading when creating an embed code when you configure an [environment](environment-overview.md). You can also configure asynchronous loading yourself:
+Launch provides a toggle to turn on asynchronous loading when creating an embed code when you configure an [environment](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/client-side-information/environment-overview.md). You can also configure asynchronous loading yourself:
 
-1.  Add an async attribute to the `<script>` tag to load the script asynchronously.
+1. Add an async attribute to the `<script>` tag to load the script asynchronously.
 
-    For the Launch embed code, that means changing this:
+   For the Launch embed code, that means changing this:
 
-    ```html
-    <script src="//www.yoururl.com/launch-EN1a3807879cfd4acdc492427deca6c74e.min.js"></script>
-    ```
+   ```markup
+   <script src="//www.yoururl.com/launch-EN1a3807879cfd4acdc492427deca6c74e.min.js"></script>
+   ```
 
-    to this:
+   to this:
 
-    ```html
-    <script src="//www.yoururl.com/launch-EN1a3807879cfd4acdc492427deca6c74e.min.js" async></script>
-    ```
+   ```markup
+   <script src="//www.yoururl.com/launch-EN1a3807879cfd4acdc492427deca6c74e.min.js" async></script>
+   ```
 
-2.  Remove any code you may have previously added at the bottom of your <body> tag:
+2. Remove any code you may have previously added at the bottom of your  tag:
 
-    ```html
-    <script type="text/javascript">_satellite.pageBottom();</script>
-    ```
+   ```markup
+   <script type="text/javascript">_satellite.pageBottom();</script>
+   ```
 
-    This code tells Launch that the browser parser has reached the bottom of the page. Since Launch likely will not have loaded and executed before this time, calling `_satellite.pageBottom()` results in an error and the Page Bottom event type may not behave as expected.
+   This code tells Launch that the browser parser has reached the bottom of the page. Since Launch likely will not have loaded and executed before this time, calling `_satellite.pageBottom()` results in an error and the Page Bottom event type may not behave as expected.
+

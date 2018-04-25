@@ -6,11 +6,11 @@ Use this reference for information about the options available when using this e
 
 Important: The Adobe Target extension requires at.js. It does not support mbox.js.
 
-If the Adobe Target extension is not yet installed, open your property, then click Extensions > Catalog, hover over the Target extension, and click Install.
+If the Adobe Target extension is not yet installed, open your property, then click Extensions &gt; Catalog, hover over the Target extension, and click Install.
 
 To configure the extension, open the Extensions tab, hover over the extension, and then click Configure.
 
-![](../images/ext-target-config.png)
+![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/ext-target-config.png)
 
 ### at.js Settings
 
@@ -36,10 +36,10 @@ The domain where Target requests are sent. This should almost always be left as 
 
 Determines where Target sets cookies in the browsers.
 
-*   **Disabled:** Sets the cookies on the first-party domain only. This is the typical setting.
-*   **Enabled:** Sets cookies on both the first-party domain and the third-party Target domain (the "Server Domain").
+* **Disabled:** Sets the cookies on the first-party domain only. This is the typical setting.
+* **Enabled:** Sets cookies on both the first-party domain and the third-party Target domain \(the "Server Domain"\).
 
-#### Timeout (ms)
+#### Timeout \(ms\)
 
 If Target does not respond with content within the defined period, the server call times out and default content is displayed. Additional calls continue to be attempted during the visitor's session. The default is 3000ms.
 
@@ -113,8 +113,8 @@ Specify whether to enable body hiding to prevent flickering, and the style used 
 
 The following options are available:
 
-*   **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
-*   **Body Hidden Style:** The default value is `body{opacity:0}`. This value can be changed to something different, like `body{display:none}`.
+* **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
+* **Body Hidden Style:** The default value is `body{opacity:0}`. This value can be changed to something different, like `body{display:none}`.
 
 For more information, refer to the [Target online help documentation](https://marketing.adobe.com/resources/help/en_US/target/ov/r_advanced_mboxjs_settings.html).
 
@@ -130,12 +130,12 @@ Specify whether to enable body hiding to prevent flickering, and the style used 
 
 The following options are available:
 
-*   **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
-*   **Body Hidden Style:** The default value is `body{opacity:0}`. This value can be changed to something different, like `body{display:none}`.
+* **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
+* **Body Hidden Style:** The default value is `body{opacity:0}`. This value can be changed to something different, like `body{display:none}`.
 
 For more information, refer to the [Target online help documentation](https://marketing.adobe.com/resources/help/en_US/target/ov/r_advanced_mboxjs_settings.html).
 
-Note: You cannot combine Load Target (sync) action with Fire Global Mbox Async action or vice-versa. Use either sync or async actions.
+Note: You cannot combine Load Target \(sync\) action with Fire Global Mbox Async action or vice-versa. Use either sync or async actions.
 
 ## Adobe Target extension with an asynchronous deployment
 
@@ -143,18 +143,18 @@ Launch supports asynchronous deployment.
 
 To use the Adobe Target extension with an asynchronous deployment, we suggest you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker.
 
-*   A pre-hiding snippet should be loaded _before_ the Launch bundle, to ensure there is no flicker.
+* A pre-hiding snippet should be loaded _before_ the Launch bundle, to ensure there is no flicker.
 
-    Important: This code can't be managed by Launch, so it must be added to the page directly.
+  Important: This code can't be managed by Launch, so it must be added to the page directly.
 
-*   To avoid hiding the whole page, the pre-hiding snippet should hide a container element that will be personalized.
+* To avoid hiding the whole page, the pre-hiding snippet should hide a container element that will be personalized.
 
-    The CSS selector used in the pre-hiding snippet can be customized, so you can pre-hide more than one element. By default, the snippet tries to load the whole page.
+  The CSS selector used in the pre-hiding snippet can be customized, so you can pre-hide more than one element. By default, the snippet tries to load the whole page.
 
-| Pre-hiding Snippet | Launch Bundle | Body Hiding Inside fireGlobalMbox Action                                                   | Target Actions |
-|--------------------|---------------|--------------------------------------------------------------------------------------------|----------------|
-| True               | Async         | Prehiding snippet hides body or other elements. Without prehiding snippet, flicker occurs. | Sync           |
-| False              | Sync          | Body hiding enabled.                                                                       | Async          |
+| Pre-hiding Snippet | Launch Bundle | Body Hiding Inside fireGlobalMbox Action | Target Actions |
+| --- | --- | --- | --- |
+| True | Async | Prehiding snippet hides body or other elements. Without prehiding snippet, flicker occurs. | Sync |
+| False | Sync | Body hiding enabled. | Async |
 
 The snippet must be added before loading at.js. The pre-hiding code snippet is as follows:
 
@@ -205,8 +205,10 @@ For example, you have two regions identified by IDs container-1 and container-2,
 ```css
 #container-1, #container-2 {opacity: 0 !important}
 ```
+
 Instead of default:
 
 ```css
 body {opacity: 0 !important}
 ```
+

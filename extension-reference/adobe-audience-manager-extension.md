@@ -4,12 +4,11 @@ With the Audience Manager extension, you can integrate the DIL code used by Audi
 
 Use this reference for information about the options available when using this extension to build a rule.
 
-Note: This extension is not meant to be used for server-side forwarding of Adobe Analytics data. For server-side forwarding, use the [Adobe Analytics extension](c_extension-analytics.md).
-
+Note: This extension is not meant to be used for server-side forwarding of Adobe Analytics data. For server-side forwarding, use the [Adobe Analytics extension](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/extension-reference/c_extension-analytics.md).
 
 ## Configure the Adobe Audience Manager extension
 
-If the Adobe Audience Manager extension is not yet installed, open your property, then click Extensions > Catalog, hover over the Adobe Audience Manager extension, and click Install.
+If the Adobe Audience Manager extension is not yet installed, open your property, then click Extensions &gt; Catalog, hover over the Adobe Audience Manager extension, and click Install.
 
 To configure the extension, open the Extensions tab, hover over the extension, and then click Configure.
 
@@ -17,11 +16,11 @@ To configure the extension, open the Extensions tab, hover over the extension, a
 
 Configure your DIL settings. The following configuration options are available:
 
-![](../images/ext-aam-config.png)
+![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/ext-aam-config.png)
 
 #### DIL Version
 
-Shows the Data Integration Library (DIL) version.
+Shows the Data Integration Library \(DIL\) version.
 
 This setting cannot be changed.
 
@@ -71,6 +70,7 @@ Run the custom code configured in the code editor.
 
 Enter the desired code in the Code Editor, then provide a name for the code. This code will become available in the Then portion of the rule builder.
 
-![](../images/ext-aam-then.png)
+![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/ext-aam-then.png)
 
 You can also add a note with information about the configuration.
+

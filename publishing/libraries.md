@@ -8,9 +8,9 @@ At build time, these changes are combined with everything that has been submitte
 
 Libraries contain the addition or removal of:
 
-*   Rules
-*   Elements
-*   Extension configuration
+* Rules
+* Elements
+* Extension configuration
 
 Libraries must be assigned to an environment before they can be compiled into a build.
 
@@ -20,51 +20,59 @@ A library moves between several environments as it makes its way through the pub
 
 ## Create a library
 
-1.  Open the Publishing tab.
-    The Publishing page lists the Dev libraries and provides the means to submit them for approval, move them to staging, or publish them to production.
-2.  Click Add New Library.
+1. Open the Publishing tab.
 
-    ![](../images/library-create.jpg)
+   The Publishing page lists the Dev libraries and provides the means to submit them for approval, move them to staging, or publish them to production.
 
-3.  Name the library.
-4.  Assign the library to a Dev environment.
-5.  Add a change to the library.
-    To add an item, click Add a Change, then choose the items you want to add. Any item that has been edited or deleted is available to add to the chosen library.
+2. Click Add New Library.
 
-    ![](../images/library-add-change.jpg)
+   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-create.jpg)
 
-    You can add the following to your library:
+3. Name the library.
+4. Assign the library to a Dev environment.
+5. Add a change to the library. To add an item, click Add a Change, then choose the items you want to add. Any item that has been edited or deleted is available to add to the chosen library.
 
-    *   Rules
-    *   Data elements
-    *   Extension configurations
+   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-add-change.jpg)
 
-6.  To add any resources that have changed, click Add All Changed Resources.
-7.  Click Save or Save and Build for Development.
-    Deploying compiles a build and deploys it to the assigned environment.
+   You can add the following to your library:
 
+   * Rules
+   * Data elements
+   * Extension configurations
+
+6. To add any resources that have changed, click Add All Changed Resources.
+7. Click Save or Save and Build for Development.
+
+   Deploying compiles a build and deploys it to the assigned environment.
 
 Once a library is created, use the drop down menu for that library to select one of the following options:
 
-*   Edit
-    Change the library configuration.
-*   Build for Development
-    Compiles a build and deploy it to the assigned environment.
-*   Submit for Approval
-    Make the library available for an Approver to move it to the next step in the publishing process
-*   Delete
-    Remove that library from the publishing process.
+* Edit
 
-![](../images/library-menu.png)
+  Change the library configuration.
+
+* Build for Development
+
+  Compiles a build and deploy it to the assigned environment.
+
+* Submit for Approval
+
+  Make the library available for an Approver to move it to the next step in the publishing process
+
+* Delete
+
+  Remove that library from the publishing process.
+
+![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-menu.png)
 
 ## Add to a library
 
-1.  Install the [extensions](extensions.md) you want to add.
-2.  Create the [data elements](data-elements.md) and rules you want to add.
-3.  Open the Publishing tab.
-4.  Select the [library](library.md) you want to change, then click Edit.
-5.  Use the rules, data elements, and extensions buttons to select the items you want to add to the library.
-6.  Save.
+1. Install the [extensions](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/extensions.md) you want to add.
+2. Create the [data elements](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/data-elements.md) and rules you want to add.
+3. Open the Publishing tab.
+4. Select the [library](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/library.md) you want to change, then click Edit.
+5. Use the rules, data elements, and extensions buttons to select the items you want to add to the library.
+6. Save.
 
 Changes to the library are shown in the Library Contents change log.
 
@@ -74,28 +82,26 @@ Note: Data elements can depend upon extensions. Rules can depend on both data el
 
 To remove something from a library, you must deactivate it and then publish the deactivated state.
 
-1.  Disable the extensions you want to remove, along with any data elements and rules that depend on those extensions.
-2.  Disable the data elements and rules you want to remove.
-3.  Open the Publishing tab.
-4.  Select the library you want to change.
-5.  Use the rules, data elements, and extensions buttons to select the disabled items you want to remove from the library.
-6.  Save.
+1. Disable the extensions you want to remove, along with any data elements and rules that depend on those extensions.
+2. Disable the data elements and rules you want to remove.
+3. Open the Publishing tab.
+4. Select the library you want to change.
+5. Use the rules, data elements, and extensions buttons to select the disabled items you want to remove from the library.
+6. Save.
 
 ## Manage library changes
 
-1.  Click on a library and select Edit to view library changes.
-    All changes are shown in the Library Contents list.
+1. Click on a library and select Edit to view library changes. All changes are shown in the Library Contents list.
 
-    ![](../images/library-contents.jpg)
+   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-contents.jpg)
 
-2.  Click a change to view and select a revision.
+2. Click a change to view and select a revision.
 
-    ![](../images/library-contents-revision.jpg)
+   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-contents-revision.jpg)
 
-3.  Select whether to show all items or changed items.
-4.  Click the revision, then click Select Revision.
-5.  Click either Add a Change or Add All Changed Resources.
-
+3. Select whether to show all items or changed items.
+4. Click the revision, then click Select Revision.
+5. Click either Add a Change or Add All Changed Resources.
 
 ## Active Library
 
@@ -103,8 +109,9 @@ Libraries encapsulate a set of changes you'd like to make to your deployed code.
 
 You can save new and existing extensions, rules, and data elements directly to the library you're working on and, if desired, immediately kick off a build. You can also create a new library from the Active Library drop down.
 
-1.  [Create a new library](#library-create).
-2.  Go to [Rules](rules.md), [Data Elements](data-elements.md), or [Extensions](extensions.md).
-3.  Select your Active Library.
-4.  Make your changes, then save and build the library.
-5.  Test your changes, and repeat these steps as needed.
+1. [Create a new library](libraries.md#library-create).
+2. Go to [Rules](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/rules.md), [Data Elements](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/data-elements.md), or [Extensions](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/extensions.md).
+3. Select your Active Library.
+4. Make your changes, then save and build the library.
+5. Test your changes, and repeat these steps as needed.
+

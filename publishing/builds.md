@@ -12,7 +12,7 @@ The default file format for builds is a package of .js files that contain all th
 
 However, in certain cases, you might prefer a .zip archive of the files rather than the executable JavaScript file. To create the .zip file, every environment has an Archive option. If you click this box, your builds are delivered as a .zip archive rather than as executable files. However, the build is still delivered to the location specified by the adapter.
 
-To complete a build, select a library and click the Build option that is available at that level of the publishing process (Build for Development, Build for Staging, and so on..
+To complete a build, select a library and click the Build option that is available at that level of the publishing process \(Build for Development, Build for Staging, and so on..
 
 ## Minification
 
@@ -20,9 +20,9 @@ Minification lowers bandwidth costs and improves speed by stripping data that is
 
 To increase performance, Launch minifies everything, including:
 
-*   The main Launch library
-*   Module code provided by extension developers as part of an extension
-*   Custom code provided by Launch users
+* The main Launch library
+* Module code provided by extension developers as part of an extension
+* Custom code provided by Launch users
 
 Note: If your module code and custom code are already minified, Launch minifies it again. This second minification doesn't provide additional benefits, but it doesn't cause any harm and it makes Launch less complex and easier to maintain.
 
@@ -37,3 +37,4 @@ If you want to see the unminified code, remove .min from the file name:
 If an extension developer provides minified code with their extension, Launch does not provide unminified code in the unminified build. Launch only provides what the extension developer delivers to Adobe. Similarly, if a Launch user puts minified code into a custom code box, that code is minified in unminified builds. Launch does not maxify anything.
 
 For more information about minification, see [https://blog.stackpath.com/glossary/minification/](https://blog.stackpath.com/glossary/minification/).
+

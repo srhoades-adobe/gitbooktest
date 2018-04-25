@@ -12,8 +12,8 @@ Resources exist in different states and they depend on one another. In some case
 
 For example:
 
-*   Deleting a data element affects the behavior of any rules that reference the data element.
-*   Deleting an extension affects any data elements and any rules that include components provided by the extension.
+* Deleting a data element affects the behavior of any rules that reference the data element.
+* Deleting an extension affects any data elements and any rules that include components provided by the extension.
 
 ## Update dependent resources
 
@@ -25,22 +25,23 @@ Modify any rules that use components provided by the extension. Any data element
 
 ### Update dependent resources for a data element
 
-1.  Update any rule components that reference the data element.
-2.  Modify any extension configurations that reference the data element.
+1. Update any rule components that reference the data element.
+2. Modify any extension configurations that reference the data element.
 
 ## Delete a resource published in Prod
 
-1.  Disable the resource.
-2.  Publish that change through to Prod.
-3.  Delete.
+1. Disable the resource.
+2. Publish that change through to Prod.
+3. Delete.
 
 ## Delete a resource from a library in Dev
 
-1.  Remove the resource from the library.
-2.  Delete.
+1. Remove the resource from the library.
+2. Delete.
 
 ## Delete a resource from a library in Stage
 
-1.  Reject the library to move it back to Dev.
-2.  Remove the resource from the library.
-3.  Delete.
+1. Reject the library to move it back to Dev.
+2. Remove the resource from the library.
+3. Delete.
+

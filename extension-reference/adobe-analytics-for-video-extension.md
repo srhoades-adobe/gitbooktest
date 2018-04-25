@@ -2,20 +2,20 @@
 
 Use this documentation for information on installing, configuring, and implementing the VA Extension. Included are the options available when using this extension to build a rule, along with examples and links to samples.
 
-The Adobe Analytics for Video Extension adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension (VA Extension) requires two additional extensions:
+The Adobe Analytics for Video Extension adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
 
-*   [Analytics Extension](c_extension-analytics.md)
-*   [Experience Cloud ID Extension](c_extension-mcid.md)
+* [Analytics Extension](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/extension-reference/c_extension-analytics.md)
+* [Experience Cloud ID Extension](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/extension-reference/c_extension-mcid.md)
 
 After you have included all three of the extensions mentioned above in your Launch project, you must then include custom JavaScript, or build a player-specific extension, to map specific video player API events to the Video Analytics events exposed through the VA Extension.
 
 ## Install and Configure the VA Extension
 
-**Install -** To install the Video Analytics (VA) Extension, open your extension property, then click Extensions > Catalog, hover over the Adobe Analytics for Video extension, and click Install.
+**Install -** To install the Video Analytics \(VA\) Extension, open your extension property, then click Extensions &gt; Catalog, hover over the Adobe Analytics for Video extension, and click Install.
 
 **Configure -** To configure the VA extension, open the Extensions tab, hover over the extension, and then click Configure:
 
-![](../images/VA Launch Doc - Google Docs.jpg)
+![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/VA%20Launch%20Doc%20-%20Google%20Docs.jpg)
 
 ### Tracking Server
 
@@ -47,25 +47,25 @@ Preferred debug log output
 
 Enable / Disable sending pings over HTTPS.
 
-Important: The VA Analytics extension requires the presence of the [Adobe Analytics](c_extension-analytics.md) and [Experience Cloud ID](c_extension-mcid.md) extensions. Customers must also add these extensions to their extension property and configure them.
+Important: The VA Analytics extension requires the presence of the [Adobe Analytics](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/extension-reference/c_extension-analytics.md) and [Experience Cloud ID](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/extension-reference/c_extension-mcid.md) extensions. Customers must also add these extensions to their extension property and configure them.
 
 ## Working With the Shared Modules
 
 ### `get-instance`
 
-This module exposes a function to create a MediaHeartbeat instance. ([https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html))
+This module exposes a function to create a MediaHeartbeat instance. \([https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html)\)
 
 The following sections show the available parameters.
 
 #### A valid `delegate` object exposing these functions:
 
-##### `getQoSObject()`
+**getQoSObject\(\)**
 
 Returns the MediaObject instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data.
 
 **Required:** Yes
 
-##### `getCurrentPlaybackTime()`
+**getCurrentPlaybackTime\(\)**
 
 Returns the current position of the playhead.
 
@@ -77,7 +77,7 @@ For LIVE/LIVE tracking, the value is specified in seconds from the beginning of 
 
 #### An optional config object exposing these properties:
 
-##### Online Video Provider
+**Online Video Provider**
 
 Name of the online video platform through which content gets distributed.
 
@@ -85,7 +85,7 @@ Name of the online video platform through which content gets distributed.
 
 **Value:** Empty String
 
-##### Player Name
+**Player Name**
 
 Name of the video player in use.
 
@@ -95,7 +95,7 @@ E.g.: "AVPlayer", "HTML5 Player", "My Custom VideoPlayer"
 
 **Value:** Empty String
 
-##### Channel
+**Channel**
 
 Channel name property
 
@@ -111,37 +111,39 @@ This module exposes all of the constants from this class: [https://adobe-marketi
 
 **Implementation**
 
-1.  Implemement the shared Media Heartbeat instance as follows:
-```javascript
-    var getMediaHeartbeatInstance =
-      turbine.getSharedModule('adobe-video-analytics', '**get-instance**');
+1. Implemement the shared Media Heartbeat instance as follows:
 
-    var MediaHeartbeat =
-      turbine.getSharedModule('adobe-video-analytics', '**media-heartbeat**');
-        ...
+   ```javascript
+   var getMediaHeartbeatInstance =
+     turbine.getSharedModule('adobe-video-analytics', '**get-instance**');
 
-        var delegate = {
-            getCurrentPlaybackTime: this._getCurrentPlaybackTime.bind(this),
-            getQoSObject: this._getQoSObject.bind(this),
-        }
+   var MediaHeartbeat =
+     turbine.getSharedModule('adobe-video-analytics', '**media-heartbeat**');
+       ...
 
-        var config = {
-            playerName: "Custom Player",
-            ovp: "Custom OVP",
-            channel: "Custom Channel"
-        }
-        ...
+       var delegate = {
+           getCurrentPlaybackTime: this._getCurrentPlaybackTime.bind(this),
+           getQoSObject: this._getQoSObject.bind(this),
+       }
 
-        var self = this;
-        getMediaHeartbeatInstance(delegate, config).then(function(instance) {
-            self._mediaHeartbeat = instance;
-            ...
-            // Do Tracking using the Media Heartbeat instance.
-        });
-    }
-    ...
-    ```
+       var config = {
+           playerName: "Custom Player",
+           ovp: "Custom OVP",
+           channel: "Custom Channel"
+       }
+       ...
 
-2.  Using the Media Heartbeat instance, follow the [VHL SDK JS documentation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/) and [JS API documentation](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/index.html) to implement video tracking.
+       var self = this;
+       getMediaHeartbeatInstance(delegate, config).then(function(instance) {
+           self._mediaHeartbeat = instance;
+           ...
+           // Do Tracking using the Media Heartbeat instance.
+       });
+   }
+   ...
+   ```
 
-Note: **Testing -** For this release, to test your extension you must upload it to [Adobe Launch](launch.adobe.com), where you have access to all dependent extensions.
+2. Using the Media Heartbeat instance, follow the [VHL SDK JS documentation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/) and [JS API documentation](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/index.html) to implement video tracking.
+
+Note: **Testing -** For this release, to test your extension you must upload it to [Adobe Launch](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
+

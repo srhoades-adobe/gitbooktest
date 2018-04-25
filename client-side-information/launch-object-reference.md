@@ -1,8 +1,10 @@
 # Launch Object Reference
 
+## Launch Object Reference
+
 This reference documents the `_satellite` object and the things you can do with it.
 
-## track
+### track
 
 #### Code
 
@@ -18,7 +20,7 @@ _satellite.track('contact_submit', { name: 'John Doe' });
 
 Fires all rules using the Direct Call event type from the Core extension that has been configured with the given identifier. The above example triggers all rules using a Direct Call event type where the configured identifier is `contact_submit`. An optional object containing related information is also passed. The detail object can be accessed by entering `%event.detail%` within a text field in a condition or action or `event.detail` inside the code editor in a Custom Code condition or action.
 
-## getVar
+### getVar
 
 #### Code
 
@@ -36,7 +38,7 @@ If a data element exists with a matching name, the data element's value will be 
 
 Note that in many form fields in the Launch user interface, you can use the `%%` syntax to reference variables, reducing the need to call `_satellite.getVar()`. For example, using %product% will access the value of the product data element or custom variable.
 
-## setVar
+### setVar
 
 #### Code
 
@@ -58,7 +60,7 @@ You may optionally set multiple variables at once by passing an object where the
 _satellite.setVar({ 'product': 'Circuit Pro', 'category': 'hobby' });
 ```
 
-## getVisitorId
+### getVisitorId
 
 #### Code
 
@@ -74,7 +76,7 @@ var visitorIdInstance = _satellite.getVisitorId();
 
 If the Adobe Experience Cloud ID extension is installed on the property, this method returns the Visitor ID instance. See the [Experience Cloud ID Service documentation](https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmcvid%2F) for more information.
 
-## logger
+### logger
 
 #### Code
 
@@ -94,16 +96,15 @@ _satellite.logger.warn(message: string)
 _satellite.logger.error(message: string)
 ```
 
-
 #### Example
 
 ```javascript
 _satellite.logger.error('No product ID found.');
 ```
 
-Logs a message to the browser console. The message will only be displayed if Launch debugging is enabled by the user (by calling `_satellite.setDebug(true)` or using an appropriate browser extension).
+Logs a message to the browser console. The message will only be displayed if Launch debugging is enabled by the user \(by calling `_satellite.setDebug(true)` or using an appropriate browser extension\).
 
-## cookie
+### cookie
 
 #### Code
 
@@ -118,7 +119,6 @@ _satellite.cookie.get(name: string) => string
 ```javascript
 _satellite.cookie.remove(name: string)
 ```
-
 
 #### Example
 
@@ -139,7 +139,7 @@ _satellite.cookie.remove('product');
 
 A utility for reading and writing cookies. This is an exposed copy of the third-party library js-cookie. For more advanced usage, please review the [js-cookie usage documentation](https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fjs-cookie%23basic-usage).
 
-## buildInfo
+### buildInfo
 
 #### Code
 
@@ -165,13 +165,13 @@ The ISO 8601 date when the current library was built.
 
 The environment for which this library was built. The possible values are:
 
-*   development
-*   staging
-*   production
+* development
+* staging
+* production
 
 This example demonstrates the object values:
 
-```json
+```javascript
 {
   turbineVersion: "14.0.0",
   turbineBuildDate: "2016-07-01T18:10:34Z",
@@ -180,7 +180,7 @@ This example demonstrates the object values:
 }
 ```
 
-## notify
+### notify
 
 #### Code
 
@@ -196,7 +196,7 @@ Note: This method has been deprecated. Please use `_satellite.logger.log()` inst
 _satellite.notify('Hello world!');
 ```
 
-Logs a message to the browser console. The message will only be displayed if Launch debugging is enabled by the user (by calling `_satellite.setDebug(true)` or using an appropriate browser extension).
+Logs a message to the browser console. The message will only be displayed if Launch debugging is enabled by the user \(by calling `_satellite.setDebug(true)` or using an appropriate browser extension\).
 
 An optional logging level can be passed which will affect styling and filtering of the message being logged. Supported levels are as follows:
 
@@ -208,7 +208,7 @@ An optional logging level can be passed which will affect styling and filtering 
 
 If you do not provide a logging level or pass any other level value, the message will be logged as a regular message.
 
-## setCookie
+### setCookie
 
 #### Code
 
@@ -226,7 +226,7 @@ _satellite.setCookie('product', 'Circuit Pro', 3);
 
 Sets a cookie in the user's browser. The cookie will persist for the number of days specified.
 
-## readCookie
+### readCookie
 
 #### Code
 
@@ -244,7 +244,7 @@ var product = _satellite.getCookie('product');
 
 Reads a cookie from the user's browser.
 
-## removeCookie
+### removeCookie
 
 #### Code
 
@@ -262,11 +262,11 @@ _satellite.removeCookie('product');
 
 Removes a cookie from the user's browser.
 
-# Debugging Functions
+## Debugging Functions
 
 The following functions should not be accessed from production code. They are intended only for debugging purposes and will change over time as needed.
 
-## container
+### container
 
 #### Code
 
@@ -278,7 +278,7 @@ _satellite._container
 
 Important: This function should not be accessed from production code. It is intended only for debugging purposes and will change over time as needed.
 
-## monitor
+### monitor
 
 #### Code
 
@@ -290,11 +290,11 @@ _satellite._monitors
 
 Important: This function should not be accessed from production code. It is intended only for debugging purposes and will change over time as needed.
 
-## Sample
+### Sample
 
 On your web page running a Launch library, add a snippet of code to your HTML. Typically, the code is placed in the `<head>` tag before the `<script>` tag that loads the Launch library. This allows the monitor to catch the earliest system events that occur in the Launch library. For example:
 
-```html
+```markup
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -340,7 +340,6 @@ In the first script tag, because the Launch library has not been loaded yet, the
 
 Called after an event triggers a rule but before the rule's conditions and actions have been processed. The event object passed to `ruleTriggered` contains information about the rule that was triggered.
 
-
 #### ruleCompleted
 
 Called after a rule has been fully processed. In other words, the event has occurred, all conditions have passed, and all actions have executed. The event object passed to `ruleCompleted` contains information about the rule that completed.
@@ -351,17 +350,18 @@ Called after a rule has been triggered and one of its conditions has failed. The
 
 If `ruleTriggered` is called, either `ruleCompleted` or `ruleConditionFailed` will be called shortly thereafter.
 
-Note: A monitor doesn't have to specify all three methods (`ruleTriggered`, `ruleCompleted`, and `ruleConditionFailed`). Launch works with whatever supported methods have been provided by the monitor.
+Note: A monitor doesn't have to specify all three methods \(`ruleTriggered`, `ruleCompleted`, and `ruleConditionFailed`\). Launch works with whatever supported methods have been provided by the monitor.
 
-## Testing the Monitor
+### Testing the Monitor
 
 The example above specifies all three methods in the monitor. When they're called, the monitor logs out relevant information. To test this, set up two rules in the Launch library:
 
-1.  A rule that has a click event and a browser condition that passes only if the browser is Chrome.
-2.  A rule that has a click event and a browser condition that passes only if the browser is Firefox.
+1. A rule that has a click event and a browser condition that passes only if the browser is Chrome.
+2. A rule that has a click event and a browser condition that passes only if the browser is Firefox.
 
 If you open the page in Chrome, open the browser console, and click the page, the following appears in the console:
 
-![](../images/debug.png)
+![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/debug.png)
 
 Additional hooks or additional information might be added to theses handlers as needed.
+
