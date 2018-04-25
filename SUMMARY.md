@@ -20,7 +20,7 @@
   * [Users](administration/users.md)
   * [Companies and Properties](administration/companies-and-properties.md)
   * [Adapters](administration/adapters.md)
-  * [Environments](administration/untitled-1.md)
+  * [Environments](administration/environments.md)
   * [Link DTM Embed Code](administration/link-dtm-embed-code.md)
 * [Extension Reference](extension-reference/README.md)
   * [Core Extension](extension-reference/core-extension.md)
