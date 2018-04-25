@@ -18,10 +18,10 @@
   * [Asynchronous Deployment](client-side-information/asynchronous-deployment.md)
 * [Administration](administration/README.md)
   * [Users](administration/users.md)
-  * [Companies and Properties](administration/untitled.md)
   * [Adapters](administration/adapters.md)
   * [Environments](administration/untitled-1.md)
   * [Link DTM Embed Code](administration/link-dtm-embed-code.md)
+  * [Companies and Properties](administration/companies-and-properties.md)
 * [Extension Reference](extension-reference/README.md)
   * [Core Extension](extension-reference/core-extension.md)
   * Experience Cloud ID Service Extension
