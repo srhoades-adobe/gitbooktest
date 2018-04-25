@@ -13,6 +13,9 @@
   * Libraries
   * Builds
   * Approval Workflow
+* Client-side Information
+  * Launch Object Reference
+  * Asynchronous Deployment
 * Administration
   * Users
   * Companies and Properties
